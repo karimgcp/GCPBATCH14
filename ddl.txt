@@ -1,0 +1,66 @@
+[200~CREATE SCHEMA IF NOT EXISTS  STAGE_USECASE4 
+
+
+CREATE TABLE STAGE_USECASE4.REAL_TRANSFORMATION
+(
+cust_id	                string   options(description=" cust_id	        "),
+first_name              string   options(description=" first_name       "),
+last_name               string   options(description=" last_name        "),
+gender                  string   options(description=" gender           "),
+ip_address              string   options(description=" ip_address       "),
+mac_id                  string   options(description=" mac_id           "),
+client_name             string   options(description=" client_name      "),
+mail_id                 string   options(description=" mail_id          "),
+url_	                string   options(description=" url_	            "),
+app_name	            string   options(description=" app_name	        "),
+ph_number	            string   options(description=" ph_number	    "),
+credit_card_band	    string   options(description=" credit_card_band "),
+card_isu_date	        string   options(description=" card_isu_date	"),
+cur_code	            string   options(description=" cur_code	        "),
+Frequency	            string   options(description=" Frequency	    "),
+valid_card	            string   options(description=" valid_card	    "),
+card_type	            string   options(description=" card_type	    "),
+currency_code	        string   options(description=" currency_code	"),
+access_code	            string   options(description=" access_code	    "),
+lst_trns_dt	            string   options(description=" lst_trns_dt	    "),
+guid	                string   options(description=" guid	            "),
+stock_sym	            string   options(description=" stock_sym	    "),
+emp_role	            string   options(description=" emp_role	        "),
+ITRAN_CAT_CDE	        string   options(description=" ITRAN_CAT_CDE	"),
+Ctry_code               string   options(description=" Ctry_code        ")OPTIONS (DESCRIPTION = "STAGE_USECASE4.REAL_TRANSFORMATION table ");
+
+
+
+
+
+CREATE SCHEMA IF NOT EXISTS karimgcp14.HISTORY_USECASE4;
+CREATE TABLE
+  karimgcp14.HISTORY_USECASE4.REAL_TRANSFORMATION ( cust_id bytes OPTIONS(DESCRIPTION="cust_id	       "),
+      first_name string OPTIONS(DESCRIPTION="first_name      "),
+          last_name string OPTIONS(DESCRIPTION="last_name       "),
+	      fullname string OPTIONS(DESCRIPTION="fullname        "),
+	          gender string OPTIONS(DESCRIPTION="gender          "),
+		      ip_address string OPTIONS(DESCRIPTION="ip_address      "),
+		          mac_id string OPTIONS(DESCRIPTION="mac_id          "),
+			      client_name STRING OPTIONS(DESCRIPTION="client_name     "),
+			          mail_id bytes OPTIONS(DESCRIPTION="mail_id         "),
+				      url_ STRING OPTIONS(DESCRIPTION="url_	           "),
+				          app_name STRING OPTIONS(DESCRIPTION="app_name	       "),
+					      ph_number STRING OPTIONS(DESCRIPTION="ph_number	   "),
+					          credit_card_band STRING OPTIONS(DESCRIPTION="credit_card_band"),
+						      card_isu_date DATE OPTIONS(DESCRIPTION="card_isu_date'  "),
+						          cur_code STRING OPTIONS(DESCRIPTION="cur_code	       "),
+							      Frequency STRING OPTIONS(DESCRIPTION="Frequency	   "),
+							          valid_card STRING OPTIONS(DESCRIPTION="valid_card	   "),
+								      card_type STRING OPTIONS(DESCRIPTION="card_type	   "),
+								          card_status STRING OPTIONS(DESCRIPTION="card_status     "),
+									      currency_code STRING OPTIONS(DESCRIPTION="currency_code'  "),
+									          access_code STRING OPTIONS(DESCRIPTION="access_code     "),
+										      lst_trns_dt DATE OPTIONS(DESCRIPTION="lst_trns_dt	   "),
+										          guid STRING OPTIONS(DESCRIPTION="guid	           "),
+											      stock_sym STRING OPTIONS(DESCRIPTION="stock_sym	   "),
+											          emp_role STRING OPTIONS(DESCRIPTION="emp_role	       "),
+												      ITRAN_CAT_CDE INT64 OPTIONS(DESCRIPTION="ITRAN_CAT_CDE'  "),
+												          Ctry_code STRING OPTIONS(DESCRIPTION="Ctry_code       ")) OPTIONS(DESCRIPTION ="karimgcp14.HISTORY_USECASE4.REAL_TRANSFORMATION TABLE");
+
+
